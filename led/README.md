@@ -1,42 +1,37 @@
-adgthjtk
+        
 
-![code](./photo_2024-04-27_23-36-28.jpg)          
-
-# چشمک زن دوگانه با تأخیر متفاوت
+# روشن کردنled arduino
 
 ## توضیحات کلی پروژه:
-این پروژه یک مدار ساده است که دو LED را به صورت متناوب روشن و خاموش می‌کند. LEDها ابتدا به مدت 5 ثانیه روشن و سپس به مدت 2 ثانیه خاموش می‌شوند. این چرخه به طور مداوم تکرار می‌شود.
+
+ led موجود بر روی مدار اردینو را روشن کردیم 
 
 ## ابزارهای مورد نیاز:
-برد آردوینو (Arduino Uno یا مشابه)
-دو عدد LED
-دو عدد مقاومت (برای محدود کردن جریان عبوری از LEDها)
-بردبورد (برای ساختن مدار)
-سیم‌های جامپر
+برد آردوینو (Arduino )
+
 
 ## تصاویر :
 
-![شماتیک مدار](https://github.com/viana-rhs/Microprocessor/blob/main/Asynchronous%20dual%20LED%20blinking/Asynchronous%20dual%20LED%20blinking.JPG?raw=true)
-![تصویر](https://github.com/viana-rhs/Microprocessor/blob/main/Asynchronous%20dual%20LED%20blinking/Asynchronous%20dual%20LED%20blinking1.jpg?raw=true)
+![شماتیک مدار](./Screenshot 2025-03-11 191825.png)
+![تصویر](./photo17466948188.jpg)
 
 
 ## کد پروژه:
 
 ```cpp
-int led1 = 12;
-int led2 = 13;
-void setup() {
-pinMode(led1 , OUTPUT);
-pinMode(led2 , OUTPUT);
+
+int led = 13;
+ 
+void setup () {
+pinMode (led, OUTPUT); 
+}
+Void loop () {
+digitalWrite (led, HIGH);
+delay (1000);
+digitalWrite (led, LOW);
+delay (1000);
 }
 
-void loop() {
-delay(2000);
-digitalWrite(led1, HIGH);
-digitalWrite(led2, HIGH);
-delay(5000);
-digitalWrite(led1, LOW);
-digitalWrite(led2, LOW);
-}
+```
 
 
