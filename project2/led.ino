@@ -1,4 +1,4 @@
-```cpp
+
 
 int led = 13; 
 int button = 7;
@@ -22,5 +22,3 @@ void loop()
 { digitalWrite(led, LOW); }
 
  }
-
-```
